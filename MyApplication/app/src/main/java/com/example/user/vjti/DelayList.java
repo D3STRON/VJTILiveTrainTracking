@@ -44,7 +44,6 @@ public class DelayList extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(mAdapter);
         mAdapter = new DelayAdapater(mDataSet,this,DelayList.this);
-
         mRecyclerView.setAdapter(mAdapter);
     }
 
@@ -79,10 +78,10 @@ public class DelayList extends AppCompatActivity {
         myuser.updateLocation();
         Intent intent = getIntent();
         trainkey = intent.getStringExtra("uid");
-        if(!mPreferences.getBoolean("isInitialized",false))
+        if(!mPreferences.getBoolean(trainkey,false))
         {
             SharedPreferences.Editor editor = getSharedPreferences("check", MODE_PRIVATE).edit();
-            editor.putBoolean("isInitialized",true);
+            editor.putBoolean(trainkey,true);
             editor.apply();
             Initialize();
         }
@@ -191,7 +190,7 @@ public class DelayList extends AppCompatActivity {
             }
         }
 
-        mRecyclerView.setAdapter(mAdapter);
+       mAdapter.notifyDataSetChanged();
     }
 }
 

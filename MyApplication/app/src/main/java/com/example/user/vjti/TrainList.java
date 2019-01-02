@@ -18,6 +18,7 @@ public class TrainList extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private ArrayList<Train>  mDataSet = new ArrayList<Train>();
     private CustomAdapter mAdapter;
+    String uid[] = {"1", "2", "3"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +30,7 @@ public class TrainList extends AppCompatActivity {
         String source[] = {"Mumbai CST","Dadar","Kurla"};
         String destination[] = {"Thane","Kalyan","Titwala"};
         String time[] = {"9:40 AM","9:55 AM","10:10 AM"};
-        String uid[] = {"1", "2", "3"};
+
         for(int i = 0 ; i < source.length; i++){
             Train t = new Train(time[i],source[i],destination[i],uid[i]);
             mDataSet.add(t);
@@ -39,6 +40,31 @@ public class TrainList extends AppCompatActivity {
         Toast.makeText(this,mDataSet.size()+ "", Toast.LENGTH_SHORT).show();
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Toast.makeText(this, "here", Toast.LENGTH_SHORT).show();
+        for(int i = 0 ; i<uid.length; i++)
+        {
+            SharedPreferences mPreferences= getSharedPreferences("check", MODE_PRIVATE);
+            SharedPreferences.Editor editor = getSharedPreferences("check", MODE_PRIVATE).edit();
+            if(!mPreferences.getBoolean(uid[i],false))
+            {
+                editor.putBoolean(uid[i],false);
+                editor.apply();
+            }
+        }
+    }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        for(int i = 0 ; i<uid.length; i++)
+        {
+            SharedPreferences.Editor editor = getSharedPreferences("check", MODE_PRIVATE).edit();
+            editor.putBoolean(uid[i],false);
+            editor.apply();
+        }
+    }
 }
 

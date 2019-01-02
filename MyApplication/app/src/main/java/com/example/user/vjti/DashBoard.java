@@ -121,11 +121,4 @@ public class DashBoard extends AppCompatActivity {
         });
     }
 
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        SharedPreferences.Editor editor = getSharedPreferences("check", MODE_PRIVATE).edit();
-        editor.putBoolean("isInitialized",false);
-        editor.apply();
-    }
 }
