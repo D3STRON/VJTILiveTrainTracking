@@ -23,7 +23,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".PaymentGateway" />
-        <activity android:name=".InAppTicketing"></activity>
+        <activity android:name=".InAppTicketing"></activity>		   
+		<uses-library android:name="org.apache.http.legacy" android:required="false" />
+
     </application>
 
 </manifest>
