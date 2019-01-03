@@ -19,7 +19,9 @@
             android:layout_centerVertical="true"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:onClick="makePayment" />
+            android:onClick="makePayment"
+            android:fontFamily="@font/raleway_semibold"
+            android:textSize="14sp"/>
 
 
 

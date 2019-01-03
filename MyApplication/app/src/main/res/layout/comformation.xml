@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:padding="16dp"
+    android:padding="10dp"
     android:orientation="vertical"
     android:layout_height="wrap_content">
     <TextView
@@ -9,28 +9,39 @@
         android:layout_height="wrap_content"
         android:text="WELCOME!"
         android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:fontFamily="@font/raleway_semibold"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Terms and Conditions!"
         android:gravity="center"
+        android:fontFamily="@font/raleway_semibold"
+        android:textSize="14sp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="1)We will be transmitting your location during journey for aiding Live tracking"
+        android:fontFamily="@font/raleway_regular"
+        android:textSize="14sp"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="2)You will be able to use real time train tracking."
+        android:fontFamily="@font/raleway_regular"
+        android:textSize="14sp"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="3)You can purchase in app tickets"
+        android:fontFamily="@font/raleway_regular"
+        android:textSize="14sp"
         />
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,6 +57,8 @@
             android:id="@+id/confirm"
             android:gravity="center"
             android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/raleway_semibold"
+            android:textSize="14sp"
             />
         <TextView
             android:layout_width="match_parent"
@@ -55,6 +68,8 @@
             android:text="CANCEL"
             android:gravity="center"
             android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/raleway_semibold"
+            android:textSize="14sp"
             />
     </LinearLayout>
 

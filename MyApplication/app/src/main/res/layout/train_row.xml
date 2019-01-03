@@ -9,7 +9,9 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:layout_marginLeft="10dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:fontFamily="@font/raleway_semibold"
+        android:layout_marginTop="8dp"/>
     <TextView
         android:id="@+id/DestinationBig"
         android:layout_width="wrap_content"
@@ -18,7 +20,9 @@
         android:layout_toRightOf="@+id/time"
         android:layout_marginLeft="40dp"
         android:text="Mumbai CST"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:fontFamily="@font/raleway_semibold"
+        android:layout_marginTop="8dp"/>
     <TextView
         android:id="@+id/slowfast"
         android:text="S"
@@ -27,7 +31,9 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/DestinationBig"
         android:layout_marginLeft="20dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:fontFamily="@font/raleway_semibold"
+        android:layout_marginTop="8dp"/>
     <View
         android:id="@+id/grayview"
         android:layout_width="1dp"
@@ -36,7 +42,7 @@
         android:layout_toRightOf="@+id/slowfast"
         android:background="@color/lightgray"
         android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"/>
+        android:layout_marginBottom="4dp" />
     <TextView
         android:id="@+id/pf"
         android:text="PF"
@@ -45,7 +51,9 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="30dp"
         android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:fontFamily="@font/raleway_semibold"
+        android:layout_marginTop="8dp"/>
     <TextView
         android:text="2"
         android:layout_width="wrap_content"
@@ -54,7 +62,8 @@
         android:layout_marginRight="35dp"
         android:layout_below="@+id/pf"
         android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:fontFamily="@font/raleway_semibold"/>
     <TextView
         android:id="@+id/source"
         android:layout_width="wrap_content"
@@ -63,8 +72,9 @@
         android:layout_below="@+id/time"
         android:textSize="16sp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
-        android:alpha="0.75"/>
+        android:layout_marginTop="8dp"
+        android:alpha="0.75"
+        android:fontFamily="@font/raleway_regular"/>
     <TextView
         android:id="@+id/dash"
         android:text="-"
@@ -74,7 +84,8 @@
         android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"/>
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/raleway_regular"/>
     <TextView
         android:id="@+id/destination"
         android:layout_below="@+id/time"
@@ -85,7 +96,8 @@
         android:layout_height="wrap_content"
         android:text="Kalyan"
         android:alpha="0.75"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/raleway_regular"/>
     <View
         android:id="@+id/grayview2"
         android:layout_width="match_parent"

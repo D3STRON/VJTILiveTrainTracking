@@ -4,7 +4,7 @@
     android:id="@+id/activity_in_app_ticketing"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.hp.m_indicator.InAppTicketing"
+    tools:context="com.example.user.vjti.InAppTicketing"
     android:background="@color/colorPrimary">
     <TextView
         android:id="@+id/source"
@@ -16,7 +16,8 @@
         android:background="@drawable/input_outline2"
         android:padding="4dp"
         android:layout_marginLeft="8dp"
-        />
+        android:textSize="16sp"
+        android:fontFamily="@font/raleway_medium"/>
     <Button
         android:id="@+id/sourcebtn"
         android:layout_width="wrap_content"
@@ -26,7 +27,8 @@
         android:text="Source"
         android:background="@color/colorPrimary"
         android:textColor="@color/white"
-        android:textSize="14dp" />
+        android:textSize="14dp"
+        android:fontFamily="@font/raleway_semibold"/>
     <TextView
         android:id="@+id/fare"
         android:layout_width="wrap_content"
@@ -37,7 +39,8 @@
         android:layout_marginLeft="20dp"
         android:textSize="20sp"
         android:textColor="@color/white"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        android:fontFamily="@font/raleway_semibold"/>
     <TextView
         android:id="@+id/fareVal"
         android:layout_width="wrap_content"
@@ -50,18 +53,21 @@
         android:textStyle="bold"
         android:textColor="@color/white"
         android:layout_marginLeft="18dp"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        android:fontFamily="@font/raleway_semibold"/>
     <TextView
         android:id="@+id/destination"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-      android:layout_alignParentEnd="true"
+        android:layout_alignParentEnd="true"
         android:text="Kalyan"
         android:gravity="center"
         android:layout_marginBottom="8dp"
         android:background="@drawable/input_outline2"
         android:padding="4dp"
-        android:layout_marginRight="8dp"/>
+        android:layout_marginRight="8dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/raleway_medium"/>
     <Button
         android:id="@+id/destinationBtn"
         android:layout_width="wrap_content"
@@ -73,7 +79,8 @@
         android:textColor="@color/white"
         android:textSize="14dp"
         android:layout_marginRight="30dp"
-        android:padding="8dp"/>
+        android:padding="8dp"
+        android:fontFamily="@font/raleway_semibold"/>
     <Button
         android:id="@+id/book"
         android:layout_width="match_parent"
@@ -83,7 +90,8 @@
         android:background="@color/colorPrimary"
         android:textColor="@color/white"
         android:textSize="14dp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/raleway_semibold"/>
     <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -98,7 +106,8 @@
         android:textSize="18dp"
         android:paddingTop="7dp"
         android:paddingLeft="18dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:fontFamily="@font/raleway_medium"/>
     <View
         android:background="@color/lightgray"
         android:layout_width="match_parent"

@@ -1,166 +1,196 @@
-<ScrollView android:layout_height="match_parent"
+<RelativeLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.shaik_000.bloodbank.DashboardActivity"
+        android:background="@color/backgroundcolor"
         android:orientation="vertical"
         android:padding="8dp"
-        android:background="@color/backgroundcolor">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="LIST OF AVAILABLE FEATURES AS COMMUNITY USER"
-    android:id="@+id/text"
-    android:layout_gravity="center"
-    />
-        <LinearLayout
-            android:clipToPadding="false"
-            android:gravity="center"
+        tools:context="com.example.shaik_000.bloodbank.DashboardActivity">
+
+        <TextView
+            android:id="@+id/text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="40dp">
+            android:layout_gravity="center"
+            android:text="LIST OF AVAILABLE FEATURES AS COMMUNITY USER"
+            android:fontFamily="@font/raleway_semibold"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
             <android.support.v7.widget.CardView
+                android:id="@+id/tracking"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_margin="5dp"
-                android:id="@+id/tracking"
-                android:clickable="false"
-                android:alpha="0.6">
+                android:alpha="0.6"
+                android:clickable="false">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:gravity="center"
+                    android:orientation="vertical"
                     android:weightSum="1">
+
                     <ImageView
                         android:layout_width="74dp"
                         android:layout_height="64dp"
+                        android:layout_weight="0.07"
                         android:padding="10dp"
-                        android:src="@drawable/tracking"
-                        android:layout_weight="0.07" />
+                        android:src="@drawable/tracking" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
+                        android:padding="10dp"
                         android:text="LIVE TRACKING"
-                        android:padding="10dp"/>
+                        android:textStyle="bold"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textSize="16sp"/>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/lightgray"
                         android:layout_margin="10dp"
-                        />
+                        android:background="@color/lightgray" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Track trains in realtime"
                         android:padding="5dp"
+                        android:text="Track trains in realtime"
                         android:textColor="@color/darkergrey"
-                        />
+                        android:fontFamily="@font/raleway_light"
+                        android:textSize="14sp"/>
 
                 </LinearLayout>
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
+                android:id="@+id/buying"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_margin="5dp"
-                android:id="@+id/buying"
-                android:clickable="false"
                 android:alpha="0.6"
-                >
+                android:clickable="false">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:padding="10dp"
-                        android:src="@drawable/ticket"/>
+                        android:src="@drawable/ticket" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
+                        android:padding="10dp"
                         android:text="BUY TICKET"
-                        android:padding="10dp"/>
+                        android:textStyle="bold"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textSize="16sp"/>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/lightgray"
                         android:layout_margin="10dp"
-                        />
+                        android:background="@color/lightgray" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Buy local tickets online"
                         android:padding="5dp"
+                        android:text="Buy local tickets online"
                         android:textColor="@color/darkergrey"
-                        />
+                        android:fontFamily="@font/raleway_light"
+                        android:textSize="14sp"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
         </LinearLayout>
+
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:clipToPadding="false"
             android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <android.support.v7.widget.CardView
+                android:id="@+id/emergency"
                 android:layout_width="170dp"
                 android:layout_height="170dp"
-                android:layout_margin="5dp"
-                android:id="@+id/emergency">
+                android:layout_margin="5dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="64dp"
                         android:layout_height="64dp"
                         android:padding="10dp"
-                        android:src="@drawable/siren"/>
+                        android:src="@drawable/siren" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
+                        android:padding="10dp"
                         android:text="EMERGENCY"
-                        android:padding="10dp"/>
+                        android:textStyle="bold"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textSize="16sp"/>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/lightgray"
                         android:layout_margin="10dp"
-                        />
+                        android:background="@color/lightgray" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="Get Help!"
                         android:padding="5dp"
+                        android:text="Get Help!"
                         android:textColor="@color/darkergrey"
-                        />
+                        android:fontFamily="@font/raleway_light"
+                        android:textSize="14sp"/>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
         </LinearLayout>
-        <Button
-            android:id="@+id/proBtn"
-            android:text="Be A Pro Member"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:textColor="@color/white"
-            />
     </LinearLayout>
-
-
-</ScrollView>
+    <Button
+        android:id="@+id/proBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/input_outline3"
+        android:text="Be A Pro Member"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:textSize="14sp"/>
+</RelativeLayout>

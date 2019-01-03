@@ -32,6 +32,7 @@ public class DelayList extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delay_list);
+        getSupportActionBar().setElevation(0);
         String station[] = {"Mumbai CST","Byculla","Dadar","Kurla","Ghatkoper","Mulund","Thane"};
         double latlan = 0.05;
         for(int i = 0;i<station.length;i++){

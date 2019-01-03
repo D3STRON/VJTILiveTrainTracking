@@ -15,8 +15,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="@font/raleway_semibold"/>
     <ImageButton
         android:id="@+id/accidentBtn"
         android:layout_width="40dp"
@@ -43,8 +44,9 @@
         android:layout_below="@+id/accident"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
-        android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="@font/raleway_semibold"/>
     <ImageButton
         android:id="@+id/handicapBtn"
         android:layout_width="40dp"
@@ -72,8 +74,9 @@
         android:layout_below="@+id/handicap"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="@font/raleway_semibold"/>
     <ImageButton
         android:id="@+id/medicalBtn"
         android:layout_width="40dp"
@@ -82,5 +85,6 @@
         android:layout_below="@+id/handicapBtn"
         android:layout_alignParentRight="true"
         android:background="#00ffffff"
+        android:layout_margin="5dp"
         />
 </RelativeLayout>

@@ -29,6 +29,7 @@ public class InAppTicketing extends AppCompatActivity implements onItemClick{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_in_app_ticketing);
+        getSupportActionBar().setElevation(0);
         mSource = (TextView) findViewById(R.id.source);
         mDestination = (TextView) findViewById(R.id.destination);
         mSourceBtn = (Button) findViewById(R.id.sourcebtn);

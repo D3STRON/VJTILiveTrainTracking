@@ -8,7 +8,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="20dp"
-    android:textSize="14sp"/>
+    android:textSize="14sp"
+    android:fontFamily="@font/raleway_regular"/>
     <View
         android:id="@+id/grayview2"
         android:layout_width="match_parent"

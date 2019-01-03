@@ -10,7 +10,9 @@
         android:text="Thane"
         android:textSize="24sp"
         android:layout_marginLeft="10dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:fontFamily="@font/raleway_semibold"
+        android:layout_marginTop="8dp"/>
     <View
         android:id="@+id/grayview2"
         android:layout_width="match_parent"
@@ -30,7 +32,8 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="10dp"
         android:textSize="16sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:fontFamily="@font/raleway_semibold"/>
     <TextView
         android:id="@+id/timeVal"
         android:text="5"
@@ -42,7 +45,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="50dp"
         android:textSize="16sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:fontFamily="@font/raleway_semibold"/>
     <TextView
         android:id="@+id/distanceLabel"
         android:text="Distance"
@@ -51,7 +55,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/distanceVal"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/raleway_regular"/>
     <TextView
         android:id="@+id/timeLabel"
         android:text="Time"
@@ -61,7 +66,8 @@
         android:layout_below="@+id/distanceVal"
         android:layout_toRightOf="@+id/distanceLabel"
         android:layout_marginTop="5dp"
-        android:layout_marginLeft="70dp"/>
+        android:layout_marginLeft="70dp"
+        android:fontFamily="@font/raleway_regular"/>
     <ImageView
         android:id="@+id/status"
         android:src="@drawable/green_circle"
