@@ -67,6 +67,7 @@ public class DashBoard extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+
         mPreferences= getSharedPreferences("user", MODE_PRIVATE);
         Boolean restoredData = mPreferences.getBoolean("isPro", false);
         if(restoredData)
@@ -120,5 +121,4 @@ public class DashBoard extends AppCompatActivity {
             }
         });
     }
-
 }

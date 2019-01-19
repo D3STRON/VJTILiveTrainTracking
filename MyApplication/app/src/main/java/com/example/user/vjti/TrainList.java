@@ -44,7 +44,6 @@ public class TrainList extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Toast.makeText(this, "here", Toast.LENGTH_SHORT).show();
         for(int i = 0 ; i<uid.length; i++)
         {
             SharedPreferences mPreferences= getSharedPreferences("check", MODE_PRIVATE);
@@ -57,15 +56,6 @@ public class TrainList extends AppCompatActivity {
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        for(int i = 0 ; i<uid.length; i++)
-        {
-            SharedPreferences.Editor editor = getSharedPreferences("check", MODE_PRIVATE).edit();
-            editor.putBoolean(uid[i],false);
-            editor.apply();
-        }
-    }
+
 }
 
