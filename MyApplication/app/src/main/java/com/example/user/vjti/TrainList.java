@@ -13,12 +13,13 @@ import android.widget.Toast;
 
 import java.sql.Time;
 import java.util.ArrayList;
+import java.util.UUID;
 
 public class TrainList extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private ArrayList<Train>  mDataSet = new ArrayList<Train>();
     private CustomAdapter mAdapter;
-    String uid[] = {"1", "2", "3"};
+    String uid[] = {UUID.randomUUID().toString(), UUID.randomUUID().toString(), UUID.randomUUID().toString()};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
